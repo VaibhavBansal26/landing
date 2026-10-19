@@ -1,0 +1,92 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Funnels and Conversations</title>
+    <meta
+      name="description"
+      content="Two standalone apps: build and publish sales funnels, and run every customer conversation from one inbox."
+    />
+    <link rel="stylesheet" href="styles.css" />
+    <script src="config.js"></script>
+    <script type="module" src="src/main.js"></script>
+  </head>
+  <body>
+    <a class="skip" href="#main">Skip to content</a>
+
+    <header class="bar">
+      <span class="brand">Funnels &amp; Conversations</span>
+      <nav aria-label="Primary">
+        <a href="#funnels">Funnels</a>
+        <a href="#conversations">Conversations</a>
+        <a href="#ai">AI</a>
+      </nav>
+    </header>
+
+    <main id="main">
+      <section class="hero">
+        <p class="eyebrow">Two apps. Use either one, or both.</p>
+        <h1>Turn visitors into customers, then keep the conversation going.</h1>
+        <p class="lead">
+          Funnels builds and publishes the pages that capture leads and sales. Conversations gives
+          your team one inbox for live chat, SMS and email. They are separate products with separate
+          sign-ups, so adopt one without the other.
+        </p>
+        <div class="actions">
+          <a class="btn primary" data-product-link="funnels">Open Funnels</a>
+          <a class="btn" data-product-link="conversations">Open Conversations</a>
+        </div>
+      </section>
+
+      <section class="products" aria-label="Products">
+        <article id="funnels" class="card">
+          <h2>Funnels</h2>
+          <p>Design multi-step landing pages with a block editor, publish them on your own domain, and see what converts.</p>
+          <ul>
+            <li>Block-based page builder with version history and undo</li>
+            <li>Opt-in forms, offers, order bumps and one-click upsells</li>
+            <li>Custom domains with DNS verification and safe fallbacks</li>
+            <li>Per-step analytics: visits, opt-ins, orders, earnings per view</li>
+            <li>Templates for lead magnets, webinars, launches and more</li>
+            <li>Signed webhooks for every lead and sale</li>
+          </ul>
+          <a class="btn primary" data-product-link="funnels">Open Funnels</a>
+        </article>
+
+        <article id="conversations" class="card">
+          <h2>Conversations</h2>
+          <p>One shared inbox for live chat, SMS and email, with assignment, routing and a chat widget for your site.</p>
+          <ul>
+            <li>Live chat widget you embed with a single script tag</li>
+            <li>SMS and email threads per contact, with opt-out handling</li>
+            <li>Inboxes, round-robin assignment, snooze and priority</li>
+            <li>Realtime delivery, read receipts and presence</li>
+            <li>Quick replies with merge fields, internal notes, @mentions</li>
+            <li>Office hours, away messages and OTP verification</li>
+          </ul>
+          <a class="btn primary" data-product-link="conversations">Open Conversations</a>
+        </article>
+      </section>
+
+      <section id="ai" class="ai">
+        <h2>AI where it saves time</h2>
+        <div class="grid">
+          <div>
+            <h3>In Funnels</h3>
+            <p>Generate a whole funnel from a short brief, rewrite copy in a different tone, get headline variants, and read plain-language insights about your weakest step.</p>
+          </div>
+          <div>
+            <h3>In Conversations</h3>
+            <p>Suggested replies, thread summaries, triage that flags urgent or spam messages, and an optional auto-responder that hands off to a person when unsure.</p>
+          </div>
+        </div>
+        <p class="note">AI is optional. Every feature has an offline fallback, and nothing is sent to an AI provider unless you configure a key.</p>
+      </section>
+    </main>
+
+    <footer>
+      <p>&copy; <span id="year"></span> Funnels &amp; Conversations</p>
+    </footer>
+  </body>
+</html>
