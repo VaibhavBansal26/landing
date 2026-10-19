@@ -50,3 +50,13 @@ test("index.html wires both product links and the config script", () => {
   assert.match(html, /<html lang="en">/);
   assert.match(html, /name="viewport"/);
 });
+
+test("docs index links to files that exist", async () => {
+  const { existsSync } = await import("node:fs");
+  const index = readFileSync(new URL("../docs/README.md", import.meta.url), "utf8");
+  const targets = [...index.matchAll(/\]\(([^)#]+)\)/g)].map((m) => m[1]);
+  assert.ok(targets.length >= 3);
+  for (const t of targets) {
+    assert.ok(existsSync(new URL(`../docs/${t}`, import.meta.url)), `missing ${t}`);
+  }
+});

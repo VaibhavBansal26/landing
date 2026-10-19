@@ -1,0 +1,2 @@
+- [ ] Tests pass (`npm test`)
+- [ ] Docs and `CHANGELOG.md` updated
