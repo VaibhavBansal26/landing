@@ -4,6 +4,8 @@ A dependency-free static page that is the entry point to two **separate, standal
 [Funnels](../funnels) and [Conversations](../conversations). It shares no code with them and talks to
 neither at runtime; it only renders two links.
 
+Full documentation index: [docs/README.md](docs/README.md).
+
 ## Configure
 Edit `config.js` (or replace it at deploy time):
 
